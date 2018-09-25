@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Cocktail = (props) => {
+const Cocktail = ({ id, name, handleCocktailClick }) => {
   return (
-    <li></li>
-  )
-}
+    <li id={id} onClick={e => handleCocktailClick(e)}>
+      {name}
+    </li>
+  );
+};
 
-export default Cocktail
+export default Cocktail;
