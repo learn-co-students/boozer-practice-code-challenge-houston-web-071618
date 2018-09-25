@@ -15,6 +15,10 @@ button {
   border-radius: 5px;
   font-size: 20px;
 }
+.allDrinks{
+  height:100vh;
+  overflow-y:auto;
+}
 
 .container {
   display: flex;
@@ -24,4 +28,12 @@ button {
 .container div {
   width: 40vw;
   margin: 0 10px;
+}
+
+#drink:hover{
+  text-decoration: underline;
+}
+
+p span{
+  font-weight: bold;
 }
