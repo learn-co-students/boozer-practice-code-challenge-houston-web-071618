@@ -25,7 +25,9 @@ class CocktailForm extends Component {
 
   handleFormSubmit = e => {
     e.preventDefault();
+
     const { name, description, instructions, proportions } = this.state;
+
     this.props.handleFormSubmit({
       name,
       description,
@@ -34,6 +36,7 @@ class CocktailForm extends Component {
       id: name,
       isLocal: true
     });
+
     this.setState({
       name: "",
       description: "",
@@ -50,6 +53,7 @@ class CocktailForm extends Component {
         </li>
       )
     );
+
     return (
       <div>
         <form onSubmit={this.handleFormSubmit}>

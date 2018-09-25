@@ -11,6 +11,7 @@ class CocktailsList extends Component {
         handleCocktailClick={this.props.handleCocktailClick}
       />
     ));
+
     return <div id="cocktail-list">{cocktails}</div>;
   }
 }

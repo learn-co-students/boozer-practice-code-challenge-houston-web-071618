@@ -37,6 +37,7 @@ class CocktailsContainer extends Component {
 
   render() {
     const loading = <h1>Loading...</h1>;
+
     return (
       <div className="container">
         {this.state.loading ? (
