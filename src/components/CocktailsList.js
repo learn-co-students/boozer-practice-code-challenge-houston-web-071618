@@ -2,9 +2,18 @@ import React, { Component } from 'react'
 import Cocktail from './Cocktail'
 
 class CocktailsList extends Component {
-  render(){
+
+  handleCocktails = () => (
+    this.props.cocktails.map(cocktail => (
+      <Cocktail cocktail={cocktail} key={cocktail.id} updateCurrentCocktail={this.props.updateCurrentCocktail} />
+    ))
+  )
+
+
+  render() {
     return (
       <div id="cocktail-list">
+        <ul>{this.handleCocktails()}</ul>
 
       </div>
     )
